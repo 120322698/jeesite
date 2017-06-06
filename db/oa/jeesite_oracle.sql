@@ -4,7 +4,7 @@
 DROP TABLE oa_leave;
 DROP TABLE oa_notify_record;
 DROP TABLE oa_notify;
-DROP TABLE OA_TEST_AUDIT;
+DROP TABLE oa_test_audit;
 
 
 
@@ -61,7 +61,7 @@ CREATE TABLE oa_notify_record
 );
 
 
-CREATE TABLE OA_TEST_AUDIT
+CREATE TABLE oa_test_audit
 (
 	id varchar2(64) NOT NULL,
 	PROC_INS_ID varchar2(64),
@@ -102,7 +102,7 @@ CREATE INDEX oa_notify_del_flag ON oa_notify (del_flag);
 CREATE INDEX oa_notify_record_notify_id ON oa_notify_record (oa_notify_id);
 CREATE INDEX oa_notify_record_user_id ON oa_notify_record (user_id);
 CREATE INDEX oa_notify_record_read_flag ON oa_notify_record (read_flag);
-CREATE INDEX OA_TEST_AUDIT_del_flag ON OA_TEST_AUDIT (del_flag);
+CREATE INDEX oa_test_audit_del_flag ON oa_test_audit (del_flag);
 
 
 
@@ -143,32 +143,32 @@ COMMENT ON COLUMN oa_notify_record.oa_notify_id IS '通知通告ID';
 COMMENT ON COLUMN oa_notify_record.user_id IS '接受人';
 COMMENT ON COLUMN oa_notify_record.read_flag IS '阅读标记';
 COMMENT ON COLUMN oa_notify_record.read_date IS '阅读时间';
-COMMENT ON TABLE OA_TEST_AUDIT IS '审批流程测试表';
-COMMENT ON COLUMN OA_TEST_AUDIT.id IS '编号';
-COMMENT ON COLUMN OA_TEST_AUDIT.PROC_INS_ID IS '流程实例ID';
-COMMENT ON COLUMN OA_TEST_AUDIT.USER_ID IS '变动用户';
-COMMENT ON COLUMN OA_TEST_AUDIT.OFFICE_ID IS '归属部门';
-COMMENT ON COLUMN OA_TEST_AUDIT.POST IS '岗位';
-COMMENT ON COLUMN OA_TEST_AUDIT.AGE IS '性别';
-COMMENT ON COLUMN OA_TEST_AUDIT.EDU IS '学历';
-COMMENT ON COLUMN OA_TEST_AUDIT.CONTENT IS '调整原因';
-COMMENT ON COLUMN OA_TEST_AUDIT.OLDA IS '现行标准 薪酬档级';
-COMMENT ON COLUMN OA_TEST_AUDIT.OLDB IS '现行标准 月工资额';
-COMMENT ON COLUMN OA_TEST_AUDIT.OLDC IS '现行标准 年薪总额';
-COMMENT ON COLUMN OA_TEST_AUDIT.NEWA IS '调整后标准 薪酬档级';
-COMMENT ON COLUMN OA_TEST_AUDIT.NEWB IS '调整后标准 月工资额';
-COMMENT ON COLUMN OA_TEST_AUDIT.NEWC IS '调整后标准 年薪总额';
-COMMENT ON COLUMN OA_TEST_AUDIT.ADD_NUM IS '月增资';
-COMMENT ON COLUMN OA_TEST_AUDIT.EXE_DATE IS '执行时间';
-COMMENT ON COLUMN OA_TEST_AUDIT.HR_TEXT IS '人力资源部门意见';
-COMMENT ON COLUMN OA_TEST_AUDIT.LEAD_TEXT IS '分管领导意见';
-COMMENT ON COLUMN OA_TEST_AUDIT.MAIN_LEAD_TEXT IS '集团主要领导意见';
-COMMENT ON COLUMN OA_TEST_AUDIT.create_by IS '创建者';
-COMMENT ON COLUMN OA_TEST_AUDIT.create_date IS '创建时间';
-COMMENT ON COLUMN OA_TEST_AUDIT.update_by IS '更新者';
-COMMENT ON COLUMN OA_TEST_AUDIT.update_date IS '更新时间';
-COMMENT ON COLUMN OA_TEST_AUDIT.remarks IS '备注信息';
-COMMENT ON COLUMN OA_TEST_AUDIT.del_flag IS '删除标记';
+COMMENT ON TABLE oa_test_audit IS '审批流程测试表';
+COMMENT ON COLUMN oa_test_audit.id IS '编号';
+COMMENT ON COLUMN oa_test_audit.PROC_INS_ID IS '流程实例ID';
+COMMENT ON COLUMN oa_test_audit.USER_ID IS '变动用户';
+COMMENT ON COLUMN oa_test_audit.OFFICE_ID IS '归属部门';
+COMMENT ON COLUMN oa_test_audit.POST IS '岗位';
+COMMENT ON COLUMN oa_test_audit.AGE IS '性别';
+COMMENT ON COLUMN oa_test_audit.EDU IS '学历';
+COMMENT ON COLUMN oa_test_audit.CONTENT IS '调整原因';
+COMMENT ON COLUMN oa_test_audit.OLDA IS '现行标准 薪酬档级';
+COMMENT ON COLUMN oa_test_audit.OLDB IS '现行标准 月工资额';
+COMMENT ON COLUMN oa_test_audit.OLDC IS '现行标准 年薪总额';
+COMMENT ON COLUMN oa_test_audit.NEWA IS '调整后标准 薪酬档级';
+COMMENT ON COLUMN oa_test_audit.NEWB IS '调整后标准 月工资额';
+COMMENT ON COLUMN oa_test_audit.NEWC IS '调整后标准 年薪总额';
+COMMENT ON COLUMN oa_test_audit.ADD_NUM IS '月增资';
+COMMENT ON COLUMN oa_test_audit.EXE_DATE IS '执行时间';
+COMMENT ON COLUMN oa_test_audit.HR_TEXT IS '人力资源部门意见';
+COMMENT ON COLUMN oa_test_audit.LEAD_TEXT IS '分管领导意见';
+COMMENT ON COLUMN oa_test_audit.MAIN_LEAD_TEXT IS '集团主要领导意见';
+COMMENT ON COLUMN oa_test_audit.create_by IS '创建者';
+COMMENT ON COLUMN oa_test_audit.create_date IS '创建时间';
+COMMENT ON COLUMN oa_test_audit.update_by IS '更新者';
+COMMENT ON COLUMN oa_test_audit.update_date IS '更新时间';
+COMMENT ON COLUMN oa_test_audit.remarks IS '备注信息';
+COMMENT ON COLUMN oa_test_audit.del_flag IS '删除标记';
 
 
 

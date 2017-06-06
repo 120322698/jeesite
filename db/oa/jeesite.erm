@@ -2,13 +2,13 @@
 <diagram>
 	<dbsetting>
 		<dbsystem>MySQL</dbsystem>
-		<server>localhost</server>
+		<server>119.23.26.170</server>
 		<port>3306</port>
-		<database>jeesite</database>
+		<database>kdmzbackstage</database>
 		<user>root</user>
-		<password>123456</password>
+		<password>KDMZ@20170311</password>
 		<use_default_driver>true</use_default_driver>
-		<url>jdbc:mysql://localhost:3306/jeesite</url>
+		<url>jdbc:mysql://119.23.26.170:3306/kdmzbackstage</url>
 		<driver_class_name>com.mysql.jdbc.Driver</driver_class_name>
 	</dbsetting>
 	<page_setting>
@@ -1065,7 +1065,7 @@
 			</color>
 			<connections>
 			</connections>
-			<physical_name>OA_TEST_AUDIT</physical_name>
+			<physical_name>oa_test_audit</physical_name>
 			<logical_name>审批流程测试表</logical_name>
 			<description>审批流程测试表</description>
 			<constraint></constraint>
@@ -1686,7 +1686,7 @@
 				<inidex>
 					<full_text>false</full_text>
 					<non_unique>true</non_unique>
-					<name>OA_TEST_AUDIT_del_flag</name>
+					<name>oa_test_audit_del_flag</name>
 					<type></type>
 					<description></description>
 					<columns>
@@ -2407,7 +2407,7 @@
 			<decimal_size>0</decimal_size>
 		</sequence>
 		<sequence>
-			<name>SEQ_OA_TEST_AUDIT</name>
+			<name>SEQ_oa_test_audit</name>
 			<schema>JEESITE</schema>
 			<increment>1</increment>
 			<min_value>1</min_value>

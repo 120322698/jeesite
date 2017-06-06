@@ -125,7 +125,7 @@ create table ACT_RU_TASK (
     DELEGATION_ varchar(64),
     PRIORITY_ integer,
     CREATE_TIME_ timestamp(3) NULL,
-    DUE_DATE_ datetime(3),
+    DUE_DATE_ timestamp(3) NULL,
     CATEGORY_ varchar(255),
     SUSPENSION_STATE_ integer,
     TENANT_ID_ varchar(255) default '',

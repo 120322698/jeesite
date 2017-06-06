@@ -5,7 +5,7 @@ SET SESSION FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS oa_leave;
 DROP TABLE IF EXISTS oa_notify_record;
 DROP TABLE IF EXISTS oa_notify;
-DROP TABLE IF EXISTS OA_TEST_AUDIT;
+DROP TABLE IF EXISTS oa_test_audit;
 
 
 
@@ -62,7 +62,7 @@ CREATE TABLE oa_notify_record
 ) COMMENT = '通知通告发送记录';
 
 
-CREATE TABLE OA_TEST_AUDIT
+CREATE TABLE oa_test_audit
 (
 	id varchar(64) NOT NULL COMMENT '编号',
 	PROC_INS_ID varchar(64) COMMENT '流程实例ID',
@@ -103,7 +103,7 @@ CREATE INDEX oa_notify_del_flag ON oa_notify (del_flag ASC);
 CREATE INDEX oa_notify_record_notify_id ON oa_notify_record (oa_notify_id ASC);
 CREATE INDEX oa_notify_record_user_id ON oa_notify_record (user_id ASC);
 CREATE INDEX oa_notify_record_read_flag ON oa_notify_record (read_flag ASC);
-CREATE INDEX OA_TEST_AUDIT_del_flag ON OA_TEST_AUDIT (del_flag ASC);
+CREATE INDEX oa_test_audit_del_flag ON oa_test_audit (del_flag ASC);
 
 
 
